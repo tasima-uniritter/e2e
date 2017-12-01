@@ -1,3 +1,3 @@
-# Preact Calculator
+# Simple E2E test
 
-Simple calculator made with Preact and tested with Capybara (TODO)
+Simple E2E test for post degree
