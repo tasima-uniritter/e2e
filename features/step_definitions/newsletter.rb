@@ -7,7 +7,7 @@ When /^I click on submit in newsletter form$/ do
 end
 
 When /^I choose one favorite content$/ do
-    click_on('.newsletter-list-label', :match => :first)
+    check('.newsletter-list-label')
 end
 
 When /^I sign me up on newsletter with invalid email$/ do
