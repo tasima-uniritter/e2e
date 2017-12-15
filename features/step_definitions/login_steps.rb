@@ -1,5 +1,6 @@
 Given /^I access Gaucha$/ do
     visit('https://gauchazh.clicrbs.com.br/')
+    find('body').click()
 end
 
 When /^I sigin with a valid user$/ do
