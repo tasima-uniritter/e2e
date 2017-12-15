@@ -3,6 +3,7 @@ require 'selenium-webdriver'
  
 Capybara.configure do |config|
   config.run_server = false
+  config.default_driver = :selenium
 end
 
 Capybara.register_driver :headless_chrome do |app|
