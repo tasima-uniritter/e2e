@@ -1,6 +1,7 @@
-Feature: Login
-	Scenario: Open login box 
-		Given I am guest user
-		When I click on Entrar button
-		Then I can fill User
-		And I can fill Password
+Feature: Using Google
+
+Scenario: Searching for a term
+
+Given I access Gaucha
+When I sigin with a valid user
+Then I should see "Soc de Educacao Ritter dosReis" in login sidebar
