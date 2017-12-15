@@ -22,7 +22,6 @@ Capybara.register_driver :headless_chrome do |app|
   )
 end
 
-Capybara.default_driver = :selenium_chrome
 Capybara.javascript_driver = :headless_chrome
 
 World(Capybara::DSL)
