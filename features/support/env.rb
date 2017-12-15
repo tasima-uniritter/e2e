@@ -1,6 +1,10 @@
 require 'capybara/cucumber'
 require 'selenium-webdriver'
  
+Capybara.configure do |config|
+  config.run_server = false
+end
+
 Capybara.register_driver :headless_chrome do |app|
   capabilities  = Selenium::WebDriver::Remote::Capabilities.chrome(
     "chromeOptions" => {
