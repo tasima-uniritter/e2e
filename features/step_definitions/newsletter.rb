@@ -7,7 +7,7 @@ When /^I click on submit in newsletter form$/ do
 end
 
 When /^I choose one favorite content$/ do
-    first('.newsletter-list-label').click()
+    first('.newsletter-list-label input').click()
 end
 
 When /^I sign me up on newsletter with invalid email$/ do
