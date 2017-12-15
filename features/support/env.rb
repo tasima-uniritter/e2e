@@ -18,6 +18,9 @@ Capybara.register_driver :headless_chrome do |app|
         "--disable-cache",
         "--incognito",
       ],
+      "prefs" => {
+        "profile.managed_default_content_settings.images": 2
+      }
     }
   )
   Capybara::Selenium::Driver.new(
