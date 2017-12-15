@@ -9,6 +9,14 @@ When /^I sigin with a valid user$/ do
     find('.form-login [type=submit]').click()
 end
 
+When /^I click on logout$/ do
+    find('.logout-txt').click()
+end
+
 Then /^I should see "(.*?)" in login sidebar$/ do |name|
     expect(find('.box-userinfos-name')).to(have_content(name))
+end
+
+Then /^I shouldn't see user name in login sidebar$/ do
+    expect(page).not_to(have_selector('.box-userinfos-name'))
 end
