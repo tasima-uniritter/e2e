@@ -6,8 +6,6 @@ Capybara.configure do |config|
   config.default_driver = :selenium
 end
 
-Capybara.ignore_hidden_elements = true
-
 Capybara.register_driver :headless_chrome do |app|
   capabilities  = Selenium::WebDriver::Remote::Capabilities.chrome(
     "chromeOptions" => {
