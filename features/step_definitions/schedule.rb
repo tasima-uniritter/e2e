@@ -1,4 +1,4 @@
-When /^I access Gaucha schedule$/ do
+Given /^I access Gaucha schedule$/ do
     visit('https://gauchazh.clicrbs.com.br/programacao/')
     find('#sas_closeButonWrapper img').click()
 end
