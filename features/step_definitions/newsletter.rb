@@ -7,7 +7,7 @@ When /^I click on submit in newsletter form$/ do
 end
 
 When /^I choose one favorite content$/ do
-    find('.newsletter-checkbox', :visible => false).click()
+    find('[for=mce-group[5]-5-0]').click()
 end
 
 When /^I sign me up on newsletter with invalid email$/ do
