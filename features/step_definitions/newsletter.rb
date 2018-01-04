@@ -7,7 +7,7 @@ When /^I click on submit in newsletter form$/ do
 end
 
 When /^I choose one favorite content$/ do
-    find('[for=mce-group[5]-5-0]').click()
+    find('.newsletter-list-label').click()
 end
 
 When /^I sign me up on newsletter with invalid email$/ do
