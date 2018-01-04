@@ -7,7 +7,7 @@ When /^I click on submit in newsletter form$/ do
 end
 
 When /^I choose one favorite content$/ do
-    find('.newsletter-checkbox').click()
+    find('.newsletter-checkbox').set(true)
 end
 
 When /^I sign me up on newsletter with invalid email$/ do
