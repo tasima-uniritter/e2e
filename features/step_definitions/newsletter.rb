@@ -7,8 +7,7 @@ When /^I click on submit in newsletter form$/ do
 end
 
 When /^I choose one favorite content$/ do
-    page.execute_script("document.querySelector('.newsletter-checkbox').classList.remove('check-hidden')");
-    find('.newsletter-checkbox').set(true)
+    find('.newsletter-checkbox', :visible => false).click()
 end
 
 When /^I sign me up on newsletter with invalid email$/ do
