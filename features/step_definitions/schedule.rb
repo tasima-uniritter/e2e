@@ -6,6 +6,6 @@ When /^I click on (.*) in shedule nav$/ do |weekday|
     click_button(weekday)
 end
 
-Then /^I can see (.*) tv programs$/ do |length|
+Then /^I can see (.*) radio programs$/ do |length|
     expect(page).to have_selector('.event', count: length)
 end
