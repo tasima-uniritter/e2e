@@ -4,7 +4,7 @@ end
 
 When /^I click on (.*) in shedule nav$/ do |weekday|
     within('.days-list') do
-        find(weekday).click();
+        click_button(weekday);
     end
 end
 
