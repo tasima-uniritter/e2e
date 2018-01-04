@@ -1,6 +1,9 @@
 Given /^I access Gaucha$/ do
     visit('https://gauchazh.clicrbs.com.br/')
-    find('#sas_closeButonWrapper img').click()
+
+    if (element_visible?('#sas_closeButonWrapper img')) {
+        find('#sas_closeButonWrapper img').click()
+    }
 end
 
 When /^I sigin with a valid user$/ do
