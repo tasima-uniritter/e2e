@@ -1,8 +1,7 @@
 Given /^I access Gaucha$/ do
     visit('https://gauchazh.clicrbs.com.br/')
-    hasAds = page.has_css?('#sas_closeButonWrapper img');
 
-    if (hasAds)
+    if (page.has_css?('#sas_closeButonWrapper img'))
         find('#sas_closeButonWrapper img').click()
     end
 end
