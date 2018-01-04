@@ -7,7 +7,7 @@ When /^I click on schedule$/ do
 end
 
 When /^I click on (.*) in shedule nav$/ do |weekday|
-    find(weekdays[weekday]).click();
+    find(:xpath, weekdays[weekday]).click();
 end
 
 Then /^I can see (.*) tv programs$/ do |length|
