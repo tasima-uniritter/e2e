@@ -7,7 +7,7 @@ When /^I click on submit in newsletter form$/ do
 end
 
 When /^I choose one favorite content$/ do
-    find('.newsletter-checkbox', :visible => true).first().set(true)
+    find('.newsletter-checkbox', :visible => false).set(true)
 end
 
 When /^I sign me up on newsletter with invalid email$/ do
