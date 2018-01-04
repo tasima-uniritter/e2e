@@ -1,5 +1,6 @@
-When /^I click on schedule$/ do
-    find("[data-for='schedule']").click();
+When /^I access Gaucha schedule$/ do
+    visit('https://gauchazh.clicrbs.com.br/programacao/')
+    find('#sas_closeButonWrapper img').click()
 end
 
 When /^I click on (.*) in shedule nav$/ do |weekday|
