@@ -7,9 +7,7 @@ When /^I click on submit in newsletter form$/ do
 end
 
 When /^I choose one favorite content$/ do
-    within(".newsletter-select-list") do
-        find('.newsletter-list-label').click()
-    end
+    check('CLUBE DO ASSINANTE');
 end
 
 When /^I sign me up on newsletter with invalid email$/ do
