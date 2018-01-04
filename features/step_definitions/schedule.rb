@@ -3,9 +3,7 @@ When /^I click on schedule$/ do
 end
 
 When /^I click on (.*) in shedule nav$/ do |weekday|
-    within('.days-list') do
-        click_button(weekday);
-    end
+    click_button(weekday);
 end
 
 Then /^I can see (.*) tv programs$/ do |length|
