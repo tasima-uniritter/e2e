@@ -31,5 +31,6 @@ Capybara.register_driver :headless_chrome do |app|
 end
 
 Capybara.javascript_driver = :headless_chrome
+Capybara.ignore_hidden_elements = true
 
 World(Capybara::DSL)
